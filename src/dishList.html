@@ -39,9 +39,9 @@
                 <label for="avgIngredients">Среднее количество ингредиентов</label><br>
 
                 <input type="checkbox" id="popularity" name="popularity">
-                <label for="popularity">Популярность</label><br>
+                <label for="popularity">Средняя популярность</label><br>
 
-                <input type="submit" value="Построить">
+                <input type="button" value="Построить">
             </form>
             <p>Здесь будет график</p>
         </details>
@@ -65,43 +65,54 @@
                 от <input type="text" id="minCalories" name="minCalories">
                 до <input type="text" id="maxCalories" name="maxCalories"><br>
 
-                <input type="submit" value="Найти">
+                <input type="button" value="Найти">
             </form>
         </details>
 
         <details>
             <summary>Сортировать по:</summary>
             <form>
+                
+                <label for="firstSort">Первый уровень: </label>
+                <select id="firstSort" name="option">
+                    <option value="none" selected>Нет</option>
+                    <option value="name">Название</option>
+                    <option value="popularity">Популярность</option>
+                    <option value="eatTime">Прием пищи</option>
+                    <option value="amountDishes">Количество порций</option>
+                    <option value="time">Примерная длительность готовки</option>
+                    <option value="amoutCcal">Количество кКал</option>
+                </select>
+                <label for="isFirstSort">по убыванию?</label>
+                <input type="checkbox" id="isFirstSort" name="first"> <br>
 
-                <input type="checkbox" id="isNameSort" name="sortByName">
-                <label for="isNameSort">Названию</label>
-                <select id="nameSort" name="name">
-                    <option value="asc">В алфавитном порядке</option>
-                    <option value="desc">В обратном порядке</option>
-                </select><br>
+                <label for="secondSort">Второй уровень: </label>
+                <select id="secondSort" name="option">
+                    <option value="none" selected>Нет</option>
+                    <option value="name">Название</option>
+                    <option value="popularity">Популярность</option>
+                    <option value="eatTime">Прием пищи</option>
+                    <option value="amountDishes">Количество порций</option>
+                    <option value="time">Примерная длительность готовки</option>
+                    <option value="amoutCcal">Количество кКал</option>
+                </select>
+                <label for="isSecondSort">по убыванию?</label>
+                <input type="checkbox" id="isSecondSort" name="second"> <br>
 
-                <input type="checkbox" id="isTimeSort" name="sortByTime">
-                <label for="isTimeSort">Времени готовки</label>
-                <select id="timeSort" name="time">
-                    <option value="asc">По возрастанию</option>
-                    <option value="desc">По убыванию</option>
-                </select><br>
+                <label for="thirdSort">Второй уровень: </label>
+                <select id="thirdSort" name="option">
+                    <option value="none" selected>Нет</option>
+                    <option value="name">Название</option>
+                    <option value="popularity">Популярность</option>
+                    <option value="eatTime">Прием пищи</option>
+                    <option value="amountDishes">Количество порций</option>
+                    <option value="time">Примерная длительность готовки</option>
+                    <option value="amoutCcal">Количество кКал</option>
+                </select>
+                <label for="isThirdSort">по убыванию?</label>
+                <input type="checkbox" id="isThirdSort" name="third"> <br>
 
-                <input type="checkbox" id="isCcalSort" name="sortByCcal">
-                <label for="isCcalSort">Количеству кКал</label>
-                <select id="ccalSort" name="ccal">
-                    <option value="asc">По возрастанию</option>
-                    <option value="desc">По убыванию</option>
-                </select><br>
-
-                <input type="checkbox" id="isIngredientsSort" name="sortByIngredients">
-                <label for="isIngredientsSort">Количеству ингредиентов</label>
-                <select id="ingredientsSort" name="ingredients">
-                    <option value="asc">По возрастанию</option>
-                    <option value="desc">По убыванию</option>
-                </select><br>
-
-                <input type="submit" value="Сортировать">
+                <input type="button" value="Сортировать">
             </form>
         </details>
 
