@@ -72,16 +72,40 @@
         <details>
             <summary>Сортировать по:</summary>
             <form>
-                <select id="sort">
-                    <option>Названию (А-Я)</option>
-                    <option>Времени готовки</option>
-                    <option>Количеству кКал</option>
-                    <option>Количество ингредиентов</option>
+
+                <input type="checkbox" id="isNameSort" name="sortByName">
+                <label for="isNameSort">Названию</label>
+                <select id="nameSort" name="name">
+                    <option value="asc">В алфавитном порядке</option>
+                    <option value="desc">В обратном порядке</option>
+                </select><br>
+
+                <input type="checkbox" id="isTimeSort" name="sortByTime">
+                <label for="isTimeSort">Времени готовки</label>
+                <select id="timeSort" name="time">
+                    <option value="asc">По возрастанию</option>
+                    <option value="desc">По убыванию</option>
+                </select><br>
+
+                <input type="checkbox" id="isCcalSort" name="sortByCcal">
+                <label for="isCcalSort">Количеству кКал</label>
+                <select id="ccalSort" name="ccal">
+                    <option value="asc">По возрастанию</option>
+                    <option value="desc">По убыванию</option>
+                </select><br>
+
+                <input type="checkbox" id="isIngredientsSort" name="sortByIngredients">
+                <label for="isIngredientsSort">Количеству ингредиентов</label>
+                <select id="ingredientsSort" name="ingredients">
+                    <option value="asc">По возрастанию</option>
+                    <option value="desc">По убыванию</option>
                 </select><br>
 
                 <input type="submit" value="Сортировать">
             </form>
         </details>
+
+        <br>
 
         <table border="1" cellspacing="0" cellpadding="5">
             <tr>
@@ -92,57 +116,407 @@
                 <th>Примерная длительность готовки</th>
                 <th>Количество кКал</th>
             </tr>
-            <tr><td>Салат Цезарь</td><td>50</td><td>Обед</td><td>2</td><td>20</td><td>250</td></tr>
-            <tr><td>Борщ</td><td>49</td><td>Обед</td><td>4</td><td>60</td><td>300</td></tr>
-            <tr><td>Пицца Маргарита</td><td>48</td><td>Ужин</td><td>2</td><td>30</td><td>450</td></tr>
-            <tr><td>Пельмени</td><td>47</td><td>Ужин</td><td>3</td><td>40</td><td>450</td></tr>
-            <tr><td>Паста Карбонара</td><td>46</td><td>Ужин</td><td>2</td><td>25</td><td>400</td></tr>
-            <tr><td>Шашлык</td><td>45</td><td>Ужин</td><td>4</td><td>60</td><td>500</td></tr>
-            <tr><td>Салат Оливье</td><td>44</td><td>Обед</td><td>2</td><td>20</td><td>350</td></tr>
-            <tr><td>Куриный суп</td><td>43</td><td>Обед</td><td>3</td><td>40</td><td>250</td></tr>
-            <tr><td>Курица в соусе</td><td>42</td><td>Ужин</td><td>2</td><td>50</td><td>350</td></tr>
-            <tr><td>Котлеты</td><td>41</td><td>Обед</td><td>4</td><td>45</td><td>400</td></tr>
-            <tr><td>Суп харчо</td><td>40</td><td>Обед</td><td>4</td><td>60</td><td>350</td></tr>
-            <tr><td>Бефстроганов</td><td>39</td><td>Ужин</td><td>3</td><td>40</td><td>400</td></tr>
-            <tr><td>Курица терияки</td><td>38</td><td>Ужин</td><td>3</td><td>35</td><td>350</td></tr>
-            <tr><td>Рыба запеченная</td><td>37</td><td>Ужин</td><td>2</td><td>35</td><td>300</td></tr>
-            <tr><td>Рис с овощами</td><td>36</td><td>Ужин</td><td>3</td><td>35</td><td>300</td></tr>
-            <tr><td>Торт шоколадный</td><td>35</td><td>Десерт</td><td>6</td><td>90</td><td>600</td></tr>
-            <tr><td>Пирог яблочный</td><td>34</td><td>Десерт</td><td>4</td><td>60</td><td>400</td></tr>
-            <tr><td>Блины с вареньем</td><td>33</td><td>Завтрак</td><td>2</td><td>25</td><td>220</td></tr>
-            <tr><td>Блины с творогом</td><td>32</td><td>Завтрак</td><td>2</td><td>25</td><td>220</td></tr>
-            <tr><td>Омлет с овощами</td><td>31</td><td>Завтрак</td><td>1</td><td>10</td><td>180</td></tr>
-            <tr><td>Каша овсяная</td><td>30</td><td>Завтрак</td><td>1</td><td>10</td><td>150</td></tr>
-            <tr><td>Творожная запеканка</td><td>29</td><td>Завтрак</td><td>2</td><td>25</td><td>200</td></tr>
-            <tr><td>Яичница</td><td>28</td><td>Завтрак</td><td>1</td><td>10</td><td>180</td></tr>
-            <tr><td>Сэндвич с ветчиной</td><td>27</td><td>Завтрак</td><td>1</td><td>10</td><td>150</td></tr>
-            <tr><td>Суп-пюре из тыквы</td><td>26</td><td>Обед</td><td>2</td><td>30</td><td>200</td></tr>
-            <tr><td>Суп с фрикадельками</td><td>25</td><td>Обед</td><td>3</td><td>35</td><td>280</td></tr>
-            <tr><td>Крем-суп</td><td>24</td><td>Обед</td><td>2</td><td>30</td><td>220</td></tr>
-            <tr><td>Суп из чечевицы</td><td>23</td><td>Обед</td><td>3</td><td>35</td><td>250</td></tr>
-            <tr><td>Суп минестроне</td><td>22</td><td>Обед</td><td>2</td><td>30</td><td>220</td></tr>
-            <tr><td>Салат Греческий</td><td>21</td><td>Обед</td><td>2</td><td>15</td><td>200</td></tr>
-            <tr><td>Тушеная капуста</td><td>20</td><td>Обед</td><td>3</td><td>30</td><td>180</td></tr>
-            <tr><td>Картофельное пюре</td><td>19</td><td>Обед</td><td>3</td><td>20</td><td>250</td></tr>
-            <tr><td>Рыба на пару</td><td>18</td><td>Ужин</td><td>2</td><td>25</td><td>250</td></tr>
-            <tr><td>Овощное рагу</td><td>17</td><td>Ужин</td><td>2</td><td>30</td><td>220</td></tr>
-            <tr><td>Кабачки в духовке</td><td>16</td><td>Ужин</td><td>2</td><td>25</td><td>180</td></tr>
-            <tr><td>Гречка с грибами</td><td>15</td><td>Ужин</td><td>2</td><td>25</td><td>200</td></tr>
-            <tr><td>Рататуй</td><td>14</td><td>Ужин</td><td>2</td><td>30</td><td>250</td></tr>
-            <tr><td>Бефстроганов</td><td>13</td><td>Ужин</td><td>3</td><td>40</td><td>400</td></tr>
-            <tr><td>Курица с овощами</td><td>12</td><td>Ужин</td><td>3</td><td>40</td><td>350</td></tr>
-            <tr><td>Макароны с сыром</td><td>11</td><td>Обед</td><td>3</td><td>20</td><td>320</td></tr>
-            <tr><td>Борщ украинский</td><td>10</td><td>Обед</td><td>4</td><td>60</td><td>300</td></tr>
-            <tr><td>Пирожки с мясом</td><td>9</td><td>Обед</td><td>4</td><td>40</td><td>400</td></tr>
-            <tr><td>Фриттата</td><td>8</td><td>Завтрак</td><td>2</td><td>15</td><td>200</td></tr>
-            <tr><td>Салат из огурцов</td><td>7</td><td>Завтрак</td><td>1</td><td>10</td><td>50</td></tr>
-            <tr><td>Овощной салат</td><td>6</td><td>Завтрак</td><td>1</td><td>10</td><td>80</td></tr>
-            <tr><td>Сэндвич с ветчиной</td><td>5</td><td>Завтрак</td><td>1</td><td>10</td><td>150</td></tr>
-            <tr><td>Каша гречневая</td><td>4</td><td>Завтрак</td><td>1</td><td>15</td><td>180</td></tr>
-            <tr><td>Тушеная свекла</td><td>3</td><td>Ужин</td><td>2</td><td>30</td><td>180</td></tr>
-            <tr><td>Котлеты рыбные</td><td>2</td><td>Ужин</td><td>2</td><td>25</td><td>300</td></tr>
-            <tr><td>Суп с грибами</td><td>1</td><td>Обед</td><td>3</td><td>30</td><td>250</td></tr>
-        </table>              
+            <tr>
+                <td>Салат Цезарь</td>
+                <td>50</td>
+                <td>Обед</td>
+                <td>2</td>
+                <td>20</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Борщ</td>
+                <td>49</td>
+                <td>Обед</td>
+                <td>4</td>
+                <td>60</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Пицца Маргарита</td>
+                <td>48</td>
+                <td>Ужин</td>
+                <td>2</td>
+                <td>30</td>
+                <td>450</td>
+            </tr>
+            <tr>
+                <td>Пельмени</td>
+                <td>47</td>
+                <td>Ужин</td>
+                <td>3</td>
+                <td>40</td>
+                <td>450</td>
+            </tr>
+            <tr>
+                <td>Паста Карбонара</td>
+                <td>46</td>
+                <td>Ужин</td>
+                <td>2</td>
+                <td>25</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>Шашлык</td>
+                <td>45</td>
+                <td>Ужин</td>
+                <td>4</td>
+                <td>60</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>Салат Оливье</td>
+                <td>44</td>
+                <td>Обед</td>
+                <td>2</td>
+                <td>20</td>
+                <td>350</td>
+            </tr>
+            <tr>
+                <td>Куриный суп</td>
+                <td>43</td>
+                <td>Обед</td>
+                <td>3</td>
+                <td>40</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Курица в соусе</td>
+                <td>42</td>
+                <td>Ужин</td>
+                <td>2</td>
+                <td>50</td>
+                <td>350</td>
+            </tr>
+            <tr>
+                <td>Котлеты</td>
+                <td>41</td>
+                <td>Обед</td>
+                <td>4</td>
+                <td>45</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>Суп харчо</td>
+                <td>40</td>
+                <td>Обед</td>
+                <td>4</td>
+                <td>60</td>
+                <td>350</td>
+            </tr>
+            <tr>
+                <td>Бефстроганов</td>
+                <td>39</td>
+                <td>Ужин</td>
+                <td>3</td>
+                <td>40</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>Курица терияки</td>
+                <td>38</td>
+                <td>Ужин</td>
+                <td>3</td>
+                <td>35</td>
+                <td>350</td>
+            </tr>
+            <tr>
+                <td>Рыба запеченная</td>
+                <td>37</td>
+                <td>Ужин</td>
+                <td>2</td>
+                <td>35</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Рис с овощами</td>
+                <td>36</td>
+                <td>Ужин</td>
+                <td>3</td>
+                <td>35</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Торт шоколадный</td>
+                <td>35</td>
+                <td>Десерт</td>
+                <td>6</td>
+                <td>90</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <td>Пирог яблочный</td>
+                <td>34</td>
+                <td>Десерт</td>
+                <td>4</td>
+                <td>60</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>Блины с вареньем</td>
+                <td>33</td>
+                <td>Завтрак</td>
+                <td>2</td>
+                <td>25</td>
+                <td>220</td>
+            </tr>
+            <tr>
+                <td>Блины с творогом</td>
+                <td>32</td>
+                <td>Завтрак</td>
+                <td>2</td>
+                <td>25</td>
+                <td>220</td>
+            </tr>
+            <tr>
+                <td>Омлет с овощами</td>
+                <td>31</td>
+                <td>Завтрак</td>
+                <td>1</td>
+                <td>10</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td>Каша овсяная</td>
+                <td>30</td>
+                <td>Завтрак</td>
+                <td>1</td>
+                <td>10</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>Творожная запеканка</td>
+                <td>29</td>
+                <td>Завтрак</td>
+                <td>2</td>
+                <td>25</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Яичница</td>
+                <td>28</td>
+                <td>Завтрак</td>
+                <td>1</td>
+                <td>10</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td>Сэндвич с ветчиной</td>
+                <td>27</td>
+                <td>Завтрак</td>
+                <td>1</td>
+                <td>10</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>Суп-пюре из тыквы</td>
+                <td>26</td>
+                <td>Обед</td>
+                <td>2</td>
+                <td>30</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Суп с фрикадельками</td>
+                <td>25</td>
+                <td>Обед</td>
+                <td>3</td>
+                <td>35</td>
+                <td>280</td>
+            </tr>
+            <tr>
+                <td>Крем-суп</td>
+                <td>24</td>
+                <td>Обед</td>
+                <td>2</td>
+                <td>30</td>
+                <td>220</td>
+            </tr>
+            <tr>
+                <td>Суп из чечевицы</td>
+                <td>23</td>
+                <td>Обед</td>
+                <td>3</td>
+                <td>35</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Суп минестроне</td>
+                <td>22</td>
+                <td>Обед</td>
+                <td>2</td>
+                <td>30</td>
+                <td>220</td>
+            </tr>
+            <tr>
+                <td>Салат Греческий</td>
+                <td>21</td>
+                <td>Обед</td>
+                <td>2</td>
+                <td>15</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Тушеная капуста</td>
+                <td>20</td>
+                <td>Обед</td>
+                <td>3</td>
+                <td>30</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td>Картофельное пюре</td>
+                <td>19</td>
+                <td>Обед</td>
+                <td>3</td>
+                <td>20</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Рыба на пару</td>
+                <td>18</td>
+                <td>Ужин</td>
+                <td>2</td>
+                <td>25</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Овощное рагу</td>
+                <td>17</td>
+                <td>Ужин</td>
+                <td>2</td>
+                <td>30</td>
+                <td>220</td>
+            </tr>
+            <tr>
+                <td>Кабачки в духовке</td>
+                <td>16</td>
+                <td>Ужин</td>
+                <td>2</td>
+                <td>25</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td>Гречка с грибами</td>
+                <td>15</td>
+                <td>Ужин</td>
+                <td>2</td>
+                <td>25</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Рататуй</td>
+                <td>14</td>
+                <td>Ужин</td>
+                <td>2</td>
+                <td>30</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Бефстроганов</td>
+                <td>13</td>
+                <td>Ужин</td>
+                <td>3</td>
+                <td>40</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>Курица с овощами</td>
+                <td>12</td>
+                <td>Ужин</td>
+                <td>3</td>
+                <td>40</td>
+                <td>350</td>
+            </tr>
+            <tr>
+                <td>Макароны с сыром</td>
+                <td>11</td>
+                <td>Обед</td>
+                <td>3</td>
+                <td>20</td>
+                <td>320</td>
+            </tr>
+            <tr>
+                <td>Борщ украинский</td>
+                <td>10</td>
+                <td>Обед</td>
+                <td>4</td>
+                <td>60</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Пирожки с мясом</td>
+                <td>9</td>
+                <td>Обед</td>
+                <td>4</td>
+                <td>40</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>Фриттата</td>
+                <td>8</td>
+                <td>Завтрак</td>
+                <td>2</td>
+                <td>15</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Салат из огурцов</td>
+                <td>7</td>
+                <td>Завтрак</td>
+                <td>1</td>
+                <td>10</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Овощной салат</td>
+                <td>6</td>
+                <td>Завтрак</td>
+                <td>1</td>
+                <td>10</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Сэндвич с ветчиной</td>
+                <td>5</td>
+                <td>Завтрак</td>
+                <td>1</td>
+                <td>10</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>Каша гречневая</td>
+                <td>4</td>
+                <td>Завтрак</td>
+                <td>1</td>
+                <td>15</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td>Тушеная свекла</td>
+                <td>3</td>
+                <td>Ужин</td>
+                <td>2</td>
+                <td>30</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td>Котлеты рыбные</td>
+                <td>2</td>
+                <td>Ужин</td>
+                <td>2</td>
+                <td>25</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Суп с грибами</td>
+                <td>1</td>
+                <td>Обед</td>
+                <td>3</td>
+                <td>30</td>
+                <td>250</td>
+            </tr>
+        </table>
     </main>
 
     <footer>
