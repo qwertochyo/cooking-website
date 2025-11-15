@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css">
+	<link rel="stylesheet" href="css/bootstrapStyles.css">
+
+	<title>HomePage</title>
+</head>
+
+<body class="d-flex flex-column gap-5">
+	<header>
+		<nav class="navbar navbar-expand-lg bg-light navbar-light px-5">
+			<a class="navbar-brand" href="#">Кулинарная книга</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Главная</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="dishList.html">Список рецептов</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="fishDish.html">Рецент года</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<h2 class="text-center fs-3 fw-bold">Основные рецепты</h2>
+
+	<div class="row gy-3 text-center px-5">
+		<div class="col-lg-2 col-md-4 col-6 bg-image hover-overlay hover-zoom hover-shadow ripple">
+			<img class="img-fluid img-thumbnail" src="../public/images/FishDish.jpg" alt="Запеченная рыба с лимоном">
+			<a href="#!">
+				<div class="mask" style="background-color: hsla(195, 83%, 58%, 0.2)"></div>
+			</a>
+		</div>
+		<div class="col-lg-2 col-md-4 col-6 bg-image hover-overlay hover-zoom hover-shadow ripple">
+			<img class="img-fluid img-thumbnail" src="../public/images/MeatDish.jpg" alt="Курица с рисом">
+			<a href="#!">
+				<div class="mask" style="background-color: hsla(195, 83%, 58%, 0.2)"></div>
+			</a>
+		</div>
+		<div class="col-lg-2 col-md-4 col-6 bg-image hover-overlay hover-zoom hover-shadow ripple">
+			<img class="img-fluid img-thumbnail" src="../public/images/Soup.jpg" alt="Суп">
+			<a href="#!">
+				<div class="mask" style="background-color: hsla(195, 83%, 58%, 0.2)"></div>
+			</a>
+		</div>
+		<div class="col-lg-2 col-md-4 col-6 bg-image hover-overlay hover-zoom hover-shadow ripple">
+			<img class="img-fluid img-thumbnail" src="../public/images/Pizza.jpg" alt="Пицца пепперони">
+			<a href="#!">
+				<div class="mask" style="background-color: hsla(195, 83%, 58%, 0.2)"></div>
+			</a>
+		</div>
+		<div class="col-lg-2 col-md-4 col-6 bg-image hover-overlay hover-zoom hover-shadow ripple">
+			<img class="img-fluid img-thumbnail" src="../public/images/Salad.jpg" alt="Летний салат">
+			<a href="#!">
+				<div class="mask" style="background-color: hsla(195, 83%, 58%, 0.2)"></div>
+			</a>
+		</div>
+		<div class="col-lg-2 col-md-4 col-6 bg-image hover-overlay hover-zoom hover-shadow ripple">
+			<img class="img-fluid img-thumbnail" src="../public/images/Dessert.jpg" alt="Панкейк с ягодным соусом">
+			<a href="#!">
+				<div class="mask" style="background-color: hsla(195, 83%, 58%, 0.2)"></div>
+			</a>
+		</div>
+	</div>
+
+	<div class="row justify-content-around gap-3 gap-xl-0">
+		<h2 class="text-center fw-bold">Рецепты дня</h2>
+		<div class="col-12 col-md-5 col-xl-3 d-flex flex-column align-items-center">
+			<div class="ratio ratio-1x1 mb-2 w-25">
+				<img class="w-100 h-100 rounded-circle" src="../public/images/SaladAvocado.jpg">
+			</div>
+			<div>
+				<h4 class="fs-6 fw-bold text-center">Салат с курицей и авокадо</h4>
+			</div>
+			<p>Общее время готовки: <span class="fw-bold">20 мин</span></p>
+			<button class="btn btn-primary fw-bold px-2 py-1 btn-sm" type="button">Подробнее</button>
+		</div>
+		<div class="col-12 col-md-5 col-xl-3 d-flex flex-column align-items-center">
+			<div class="ratio ratio-1x1 mb-2 w-25">
+				<img class="rounded-circle h-100 w-100" src="../public/images/Bolonezze.jpg">
+			</div>
+			<div>
+				<h4 class="fs-6 fw-bold text-center">Спагетти с соусом Болоньезе</h4>
+			</div>
+			<p>Общее время готовки: <span class="fw-bold">40 мин</span></p>
+			<button class="btn btn-primary fw-bold px-2 py-1 btn-sm" type="button">Подробнее</button>
+		</div>
+		<div class="col-12 col-md-5 col-xl-3 d-flex flex-column align-items-center">
+			<div class="ratio ratio-1x1 mb-2 w-25">
+				<img class="rounded-circle h-100 w-100" src="../public/images/CremSoup.jpg">
+			</div>
+			<div>
+				<h4 class="fs-6 fw-bold text-center">Крем-суп из тыквы</h4>
+			</div>
+			<p>Общее время готовки: <span class="fw-bold">30 мин</span></p>
+			<button class="btn btn-primary fw-bold px-2 py-1 btn-sm" type="button">Подробнее</button>
+		</div>
+		<div class="col-12 col-md-5 col-xl-3 d-flex flex-column align-items-center">
+			<div class="ratio ratio-1x1 mb-2 w-25">
+				<img class="rounded-circle h-100 w-100" src="../public/images/Cookies.jpg">
+			</div>
+			<div>
+				<h4 class="fs-6 fw-bold text-center">Овсяное печенье с бананом</h4>
+			</div>
+			<p>Общее время готовки: <span class="fw-bold">25 мин</span></p>
+			<button class="btn btn-primary fw-bold px-2 py-1 btn-sm" type="button">Подробнее</button>
+		</div>
+	</div>
+
+	<main class="container d-flex flex-column gap-3 align-items-center">
+
+		<div class="col-9 d-flex flex-column gap-3 mx-auto">
+			<div class="d-flex gap-2 flex-column flex-xl-row align-items-xl-center border rounded-3 border-primary p-3">
+				<div class="col-12 col-xl-2 text-center">
+					<img class="w-100 h-xl-50 h-100 rounded-3 object-fit-cover" src="../public/images/Omelet.jpg"
+						alt="Омлет">
+				</div>
+				<div class="col-xl-10 d-flex flex-column gap-3 flex-xl-row">
+					<div class="col-12 col-xl-3">
+						<h3 class="fs-5 fw-bold">Омлет с сыром</h3>
+						<p class="fst-italic">Завтрак</p>
+					</div>
+					<div class="col-12 col-xl-3">
+						<h4 class="fs-6 fw-bold">Ингредиенты (на 1 порцию):</h4>
+						<div class="p-1 border border-primary mb-2 rounded-3">
+							<p>Яйца – 2 шт</p>
+							<p>Молоко – 2 ст.л</p>
+							<p>Сыр (твердый) – 30 г</p>
+							<p>Соль, перец – по вкусу</p>
+							<p>Масло растительное – 1 ч.л</p>
+						</div>
+						<button class="btn btn-primary fw-bold px-2 py-1 btn-sm" type="button">Подробнее</button>
+					</div>
+
+					<div class="col-12 col-xl-5">
+						<h4 class="fs-6 fw-bold">Приготовление:</h4>
+						<div class="lh-lg d-flex flex-column gap-2">
+							<p><span class="p-2 text-light fw-bold bg-primary rounded-3">Шаг 1</span> В миске взбейте
+								яйца с молоком,
+								добавьте соль и перец</p>
+							<p><span class="p-2 text-light fw-bold bg-primary rounded-3">Шаг 2</span> Разогрейте
+								сковороду с маслом
+							</p>
+							<p><span class="p-2 text-light fw-bold bg-primary rounded-3">Шаг 3</span> Влейте яичную
+								смесь, уменьшите
+								огонь</p>
+							<p><span class="p-2 text-light fw-bold bg-primary rounded-3">Шаг 4</span> Посыпьте сыром,
+								накройте
+								крышкой, готовьте 5–7 минут</p>
+						</div>
+						<hr class="border border-primary border-1 opacity-100">
+						<p>Общее время готовки: <span class="fw-bold">15 мин</span></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="d-flex gap-2 flex-column flex-xl-row align-items-xl-center border rounded-3 border-primary p-3">
+				<div class="col-xl-10 d-flex flex-column gap-3 flex-xl-row">
+					<div class="col-12 col-xl-3">
+						<h3 class="fs-5 fw-bold">Ризотто с грибами</h3>
+						<p class="fst-italic">Обед</p>
+					</div>
+					<div class="col-12 col-xl-3">
+						<h4 class="fs-6 fw-bold">Ингредиенты (на 2 порции):</h4>
+						<div class="p-2 border border-primary mb-2 rounded-3">
+							<p>Рис для ризотто (арборио) – 150 г</p>
+							<p>Грибы (шампиньоны) – 150 г</p>
+							<p>Овощной или куриный бульон – 400 мл</p>
+							<p>Масло сливочное или оливковое – 20 г</p>
+						</div>
+						<button class="btn btn-primary fw-bold px-2 py-1 btn-sm" type="button">Подробнее</button>
+					</div>
+
+					<div class="col-12 col-xl-5">
+						<h4 class="fs-6 fw-bold">Приготовление:</h4>
+						<div class="lh-lg d-flex flex-column gap-2">
+							<p><span class="p-2 text-light fw-bold bg-primary rounded-3">Шаг 1</span> Нарежьте грибы
+								небольшими
+								кусочками</p>
+							<p><span class="p-2 text-light fw-bold bg-primary rounded-3">Шаг 2</span> Разогрейте масло в
+								сковороде и
+								обжарьте грибы 3-4 минуты</p>
+							<p><span class="p-2 text-light fw-bold bg-primary rounded-3">Шаг 3</span> Добавьте рис и
+								слегка обжарьте
+								1-2 минуты, помешивая</p>
+							<p><span class="p-2 text-light fw-bold bg-primary rounded-3">Шаг 4</span> Снимите с огня,
+								перемешайте и
+								подавайте горячим</p>
+							</p>
+							<hr class="border border-primary border-1 opacity-100">
+							<p>Общее время готовки: <span class="fw-bold">25 мин</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-xl-2 text-center">
+					<img class="w-100 h-xl-50 h-100 rounded-3" src="../public/images/Rissoto.jpg" alt="Ризотто">
+				</div>
+			</div>
+
+			<div class="col-xl-12 d-flex flex-column flex-xl-row gap-3 justify-content-center">
+				<div class="col-xl-6 d-flex gap-2 flex-column border rounded-3 border-primary p-3">
+					<div>
+						<h3 class="fs-5 fw-bold">Запечённая семга с овощами</h3>
+						<p class="fst-italic">Ужин</p>
+					</div>
+
+					<div class="d-flex flex-column flex-xl-row gap-3">
+						<div>
+							<h4 class="fs-6 fw-bold">Ингредиенты (на 1 порцию):</h4>
+							<div class="p-2 border border-primary rounded-3 mb-2">
+								<p>Филе семги – 2 шт (по 150-180 г)</p>
+								<p>Кабачок – 1/2 шт</p>
+								<p>Масло (оливковое или сливочное) – 2 ст.л</p>
+								<p>Соль и перец – по вкусу</p>
+							</div>
+							<button class="btn btn-primary fw-bold px-2 py-1 btn-sm" type="button">Подробнее</button>
+						</div>
+
+						<div>
+							<h4 class="fs-6 fw-bold">Приготовление:</h4>
+							<ol class="lh-lg d-flex flex-column gap-2">
+								<li><span class="p-2 text-light fw-bold bg-primary rounded-3">Шаг 1</span> Разогрейте
+									духовку до 200°С
+								</li>
+								<li><span class="p-2 text-light fw-bold bg-primary rounded-3">Шаг 2</span> Нарежьте
+									кабачок, смешайте с
+									маслом, солью и перцем</li>
+								<li><span class="p-2 text-light fw-bold bg-primary rounded-3">Шаг 3</span> Посолите
+									семгу, положите на
+									кабачок</li>
+								<li><span class="p-2 text-light fw-bold bg-primary rounded-3">Шаг 4</span> Запекайте
+									20–25 минут</li>
+							</ol>
+							<hr class="border border-primary border-1 opacity-100">
+							<p>Общее время готовки: <span class="fw-bold">25 мин</span></p>
+						</div>
+					</div>
+
+					<div class="text-center">
+						<img class="w-100 w-xl-50 h-100 img-fluid rounded-3" src="../public/images/Salmon.jpg"
+							alt="Семга">
+					</div>
+				</div>
+
+				<div class="col-12 col-xl-6 d-flex gap-2 flex-column border rounded-3 border-primary p-3">
+					<div class="text-center">
+						<img class="w-100 w-xl-50 h-100 rounded-3" src="../public/images/ChickenFillet.jpg"
+							alt="Куриное филе в грибном соусе">
+					</div>
+					<div>
+						<h3 class="fs-5 fw-bold">Куриное филе с грибным соусом</h3>
+						<p class="fst-italic">Обед</p>
+					</div>
+
+					<div class="d-flex flex-column flex-xl-row gap-3">
+						<div>
+							<h4 class="fs-6 fw-bold">Ингредиенты (на 1 порцию):</h4>
+							<div class="p-2 border border-primary mb-2 rounded-3">
+								<p>Куриное филе – 150 г</p>
+								<p>Шампиньоны – 50 г</p>
+								<p>Лук – 1/2 шт</p>
+								<p>Сливки 10% – 50 мл</p>
+								<p>Соль, перец – по вкусу</p>
+								<p>Растительное масло – 1 ч.л</p>
+							</div>
+							<button class="btn btn-primary fw-bold px-2 py-1 btn-sm" type="button">Подробнее</button>
+						</div>
+
+						<div>
+							<h4 class="fs-6 fw-bold">Приготовление:</h4>
+							<div class="lh-lg d-flex flex-column gap-2">
+								<p><span class="p-2 text-light fw-bold bg-primary rounded-3">Шаг 1</span> Обжарьте лук и
+									грибы
+								</p>
+								<p><span class="p-2 text-light fw-bold bg-primary rounded-3">Шаг 2</span> Добавьте филе
+									и обжарьте</p>
+								<p><span class="p-2 text-light fw-bold bg-primary rounded-3">Шаг 3</span> Влейте сливки,
+									потушите</p>
+								<p><span class="p-2 text-light fw-bold bg-primary rounded-3">Шаг 4</span> Подавайте с
+									гарниром</p>
+							</div>
+							<hr class="border border-primary border-1 opacity-100">
+							<p>Общее время готовки: <span class="fw-bold">20 мин</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</main>
+
+	<footer>
+		<hr class="border border-primary border-1 opacity-100">
+		<p class="text-center">Сайт создан студентом ДВФУ, группа Б9123-09.03.04, Полулях А.А. 2025</p>
+	</footer>
+
+</body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>
